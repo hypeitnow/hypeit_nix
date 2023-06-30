@@ -29,7 +29,7 @@ let
 in
 
 {
-  nixpkgs.config.packageOverrides = nur.repos;
+  #nixpkgs.config.packageOverrides = nur.repos;
 
   imports =
     [ # Include the results of the hardware scan.
@@ -69,7 +69,7 @@ in
 
   networking = {
     hostName = "nixos-test"; # Define your hostname.
-    wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+    wireless.enable = false;  # Enables wireless support via wpa_supplicant.
 
     networkmanager.enable = true;
     interfaces.enp0s8 = {
