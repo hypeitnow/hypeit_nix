@@ -53,7 +53,7 @@ in
 
 
 
-  nixpkgs.overlays = import ../../overlays args;
+  nixpkgs.overlays = import ./overlays args;
 
   # Bootloader.
   boot.loader = {
