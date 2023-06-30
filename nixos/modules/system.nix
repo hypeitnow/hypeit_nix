@@ -1,4 +1,4 @@
-{ config, pkgs, devenv, ... }:
+{ config, pkgs, ... }:
 {
   nixpkgs.config.permittedInsecurePackages = [
     "electron-19.0.7"  # required by wechat-uos, and it's already EOL
@@ -169,8 +169,6 @@
     remmina
     freerdp  # required by remmina
 
-    devenv.packages."${pkgs.system}".devenv
-
     nixos-conf-editor
     ((pkgs.vscode.override { isInsiders = true; }).overrideAttrs (oldAttrs: {
       src = (builtins.fetchTarball {
@@ -181,6 +179,7 @@
       });
       version = "latest";
     }))
+
     (import (fetchTarball https://github.com/cachix/devenv/archive/v0.6.3.tar.gz)).default
   ];
 
