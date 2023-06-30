@@ -19,12 +19,11 @@ let
     sha256 = "sha256-QOigD8CaueznOKjjTpz1+lwiOX1o6qPTgZE6GmrCL/o=";
   }) {};
 
-  nur = import (pkgs.fetchFromGitHub {
-    owner = "nix-community";
-    repo = "NUR";
-    rev = "HEAD";
-    sha256 = "0000000000000000000000000000000000000000000000000000";
-  }) { inherit config pkgs; };
+  nixpkgs.config.packageOverrides = pkgs: {
+    nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
+      inherit pkgs;
+    };
+  };
 
 in
 
