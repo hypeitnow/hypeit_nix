@@ -19,7 +19,7 @@ let
     sha256 = "sha256-QOigD8CaueznOKjjTpz1+lwiOX1o6qPTgZE6GmrCL/o=";
   }) {};
 
-  nur = import (builtins.fetchFromGitHub {
+  nur = import (pkgs.fetchFromGitHub {
     owner = "nix-community";
     repo = "NUR";
     rev = "HEAD";
