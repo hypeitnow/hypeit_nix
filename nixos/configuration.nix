@@ -6,19 +6,6 @@
 { config, pkgs, ... } @args:
 
 let
-  nix-software-center = import (pkgs.fetchFromGitHub {
-    owner = "vlinkz";
-    repo = "nix-software-center";
-    rev = "0.1.2";
-    sha256 = "xiqF1mP8wFubdsAQ1BmfjzCgOD3YZf7EGWl9i69FTls=";
-  }) {};
-  nixos-conf-editor = import (pkgs.fetchFromGitHub {
-    owner = "vlinkz";
-    repo = "nixos-conf-editor";
-    rev = "9be2ed1183ca1cdf9c3a7a437032f41241d7a3b5";
-    sha256 = "sha256-QOigD8CaueznOKjjTpz1+lwiOX1o6qPTgZE6GmrCL/o=";
-  }) {};
-
   nixpkgs.config.packageOverrides = pkgs: {
     nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
       inherit pkgs;

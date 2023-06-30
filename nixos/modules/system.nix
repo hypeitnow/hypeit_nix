@@ -1,4 +1,12 @@
 { config, pkgs, ... }:
+let
+  nixos-conf-editor = import (pkgs.fetchFromGitHub {
+    owner = "vlinkz";
+    repo = "nixos-conf-editor";
+    rev = "0.1.1";
+    sha256 = "sha256-TeDpfaIRoDg01FIP8JZIS7RsGok/Z24Y3Kf+PuKt6K4=";
+  }) {};
+in
 {
   nixpkgs.config.permittedInsecurePackages = [
     "electron-19.0.7"  # required by wechat-uos, and it's already EOL
