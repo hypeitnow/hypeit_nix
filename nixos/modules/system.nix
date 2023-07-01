@@ -56,7 +56,12 @@
   services.xserver.dpi = 96;
   services.xserver.libinput.enable = true; # touchpad
   fonts.fonts = with pkgs; [ ubuntu_font_family ];
-
+  services.xserver.displayManager.sddm.extraConfig = ''
+    [Theme]
+    Current=breeze
+    WallpaperPlugin=org.kde.image
+    Image=./modules/wallpapers/wallpaper.png
+  '';
   # sound
   sound.enable = true;
   #hardware.pulseaudio.enable = true;
