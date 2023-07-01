@@ -27,6 +27,18 @@ in {
     home.stateVersion = "23.05";
     home.username = "hypeit";
     home.homeDirectory = "/home/hypeit";
+
+    home.file.".p10k.zsh" = {
+      source = ./p10k/.p10k.zsh;
+      executable = true;
+    };
+    home.file.".local/share/applications/steam.desktop" = {
+      source = ./steam.desktop;
+    };
+    home.file.".emacs.d" = {
+      source = ./emacs/.emacs.d;
+      recursive = true;
+    };
   };
 
   imports = [

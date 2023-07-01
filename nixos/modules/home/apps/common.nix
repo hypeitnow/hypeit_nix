@@ -112,8 +112,4 @@
     emacs.enable = true;
   };
 
-  home.file.".emacs.d" = {
-    source = ./emacs/.emacs.d;
-    recursive = true;
-  };
 }
