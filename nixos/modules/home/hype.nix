@@ -32,6 +32,9 @@ in {
     extraGroups =
       [ "wheel" "networkmanager" "audio" "docker" "nixconfig" "dialout" ];
   };
+  #Autologin
+  services.xserver.displayManager.autoLogin.enable = true;
+  services.xserver.displayManager.autoLogin.user = "hypeit";
 
   programs.home-manager.enable = true;
   home-manager.users.hypeit = { pkgs, config, ... }: {
