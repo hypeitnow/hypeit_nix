@@ -27,7 +27,7 @@
     home.homeDirectory = "/home/hypeit";
 
     home.file.".p10k.zsh" = {
-      source = .apps/p10k/.p10k.zsh;
+      source = ./apps/p10k/.p10k.zsh;
       executable = true;
     };
     home.file.".local/share/applications/steam.desktop" = {
