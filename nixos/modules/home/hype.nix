@@ -17,7 +17,6 @@
   services.xserver.displayManager.autoLogin.enable = true;
   services.xserver.displayManager.autoLogin.user = "hypeit";
 
-  programs.home-manager.enable = true;
   home-manager.users.hypeit = { pkgs, config, ... }: {
 
     home.packages = with pkgs; [ keybase-gui ];
