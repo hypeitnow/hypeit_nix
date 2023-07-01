@@ -137,7 +137,7 @@
     openvpn
     unzip
     ripgrep
-    bpytop
+    btop
     killall
     htop
     handbrake
