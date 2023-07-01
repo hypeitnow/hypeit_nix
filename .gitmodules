@@ -10,3 +10,12 @@
 [submodule "examples/ricarch-config"]
 	path = examples/ricarch-config
 	url = https://github.com/RicArch97/nixos-config.git
+[submodule "examples/nix-starter"]
+	path = examples/nix-starter
+	url = https://github.com/Misterio77/nix-starter-configs.git
+[submodule "examples/nix-entry-level"]
+	path = examples/nix-entry-level
+	url = https://git.sr.ht/~misterio/nix-config
+[submodule "examples/nix-flake-transform"]
+	path = examples/nix-flake-transform
+	url = https://github.com/mcdonc/.nixconfig.git
