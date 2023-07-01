@@ -33,8 +33,11 @@
     home.file.".local/share/applications/steam.desktop" = {
       source = ./apps/steam.desktop;
     };
+    home.file.".Pictures/wallpaper.png" = {
+      source = ./../wallpapers/wallpaper.png;
+    };
     home.file.".emacs.d" = {
-      source = ./apps/emacs/.emacs.d;
+      source = ./../apps/emacs/.emacs.d;
       recursive = true;
     };
     imports = [
