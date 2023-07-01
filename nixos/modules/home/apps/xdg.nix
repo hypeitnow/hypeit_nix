@@ -1,4 +1,4 @@
-{config, ...}: let
+{config, pkgs, ...}: let
   browser = ["brave.desktop"];
 
   # XDG MIME types
