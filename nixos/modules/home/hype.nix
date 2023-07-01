@@ -4,7 +4,6 @@ let
   hm = fetchTarball
     "https://github.com/nix-community/home-manager/archive/release-23.05.tar.gz";
 in {
-  imports = [ (import "${hm}/nixos") ];
 
   nix.extraOptions = ''
     trusted-users = root hypeit
@@ -31,6 +30,7 @@ in {
   };
 
   imports = [
+    (import "${hm}/nixos")
     ./apps
   ];
 }
