@@ -56,7 +56,7 @@
   services.xserver.dpi = 96;
   services.xserver.libinput.enable = true; # touchpad
   fonts.fonts = with pkgs; [ ubuntu_font_family ];
-  services.xserver.displayManager.sddm.extraConfig = ''
+  services.xserver.displayManager.sddm.settings = ''
     [Theme]
     Current=breeze
     WallpaperPlugin=org.kde.image
@@ -108,9 +108,6 @@
 
   # enable docker
   virtualisation.docker.enable = true;
-
-  # default shell for all users
-  users.defaultUserShell = pkgs.zsh;
 
   programs.ssh = {
     pubkeyAcceptedKeyTypes = [ "ssh-ed25519" "ssh-rsa" ];

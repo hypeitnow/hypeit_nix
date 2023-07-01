@@ -16,7 +16,9 @@
   #Autologin
   services.xserver.displayManager.autoLogin.enable = true;
   services.xserver.displayManager.autoLogin.user = "hypeit";
-
+  # default shell for all users
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
   home-manager.users.hypeit = { pkgs, config, ... }: {
 
     home.packages = with pkgs; [ keybase-gui ];

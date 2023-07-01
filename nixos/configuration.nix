@@ -16,7 +16,7 @@ in {
 
   networking = {
     hostName = "hypeit-nix"; # Define your hostname.
-    hostId = "hypeit-nix";
+
     wireless.enable = false;  # Enables wireless support via wpa_supplicant.
 
     networkmanager.enable = true;
