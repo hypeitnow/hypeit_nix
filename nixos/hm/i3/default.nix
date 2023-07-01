@@ -22,11 +22,11 @@
   # allow fontconfig to discover fonts and configurations installed through home.packages
   fonts.fontconfig.enable = true;
 
-  systemd.user.sessionVariables = {
-    "LIBVA_DRIVER_NAME" = "nvidia";
-    "GBM_BACKEND" = "nvidia-drm";
-    "__GLX_VENDOR_LIBRARY_NAME" = "nvidia";
-  };
+  # systemd.user.sessionVariables = {
+  #   "LIBVA_DRIVER_NAME" = "nvidia";
+  #   "GBM_BACKEND" = "nvidia-drm";
+  #   "__GLX_VENDOR_LIBRARY_NAME" = "nvidia";
+  # };
 
   # set cursor size and dpi for 4k monitor
   xresources.properties = {
