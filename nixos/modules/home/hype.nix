@@ -37,7 +37,7 @@
       source = ./../wallpapers/wallpaper.png;
     };
     home.file.".emacs.d" = {
-      source = ./../apps/emacs/.emacs.d;
+      source = ./apps/emacs/.emacs.d;
       recursive = true;
     };
     imports = [
