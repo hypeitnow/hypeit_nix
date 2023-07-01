@@ -4,11 +4,7 @@
   ...
 }:
 # media - control and enjoy audio/video
-let
-  hm = fetchTarball "https://github.com/nix-community/home-manager/archive/release-23.05.tar.gz";
-in
 {
-  imports = [ (import "${hm}/nixos") ];
   home.packages = with pkgs; [
     # audio control
     pavucontrol

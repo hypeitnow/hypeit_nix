@@ -39,10 +39,9 @@ in {
       source = ./emacs/.emacs.d;
       recursive = true;
     };
+    imports = [
+      (import "${hm}/nixos")
+      ./apps
+    ];
   };
-
-  imports = [
-    (import "${hm}/nixos")
-    ./apps
-  ];
 }
