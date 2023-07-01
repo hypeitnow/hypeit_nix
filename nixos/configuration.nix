@@ -6,9 +6,9 @@ let
 in {
   imports = [
     ./hardware-configuration.nix
-    ../modules/system.nix
-    ../modules/rc505.nix
-    ../modules/home/hype.nix
+    ./modules/system.nix
+    ./modules/rc505.nix
+    ./modules/home/hype.nix
   ];
 
   networking = {
