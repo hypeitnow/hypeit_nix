@@ -3,11 +3,14 @@
 let
   hw = fetchTarball
     "https://github.com/NixOS/nixos-hardware/archive/master.tar.gz"; #hw link in case of wanting to add anoter hw profile for real machine
+  hm = fetchTarball
+    "https://github.com/nix-community/home-manager/archive/release-23.05.tar.gz"; #home manager
 in {
   imports = [
     ./hardware-configuration.nix
     ./modules/system.nix
     ./modules/rc505.nix
+    (import "${hm}/nixos")
     ./modules/home/hype.nix
   ];
 

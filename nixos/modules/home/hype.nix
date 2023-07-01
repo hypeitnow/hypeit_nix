@@ -1,9 +1,6 @@
 { config, pkgs, ... }:
 
-let
-  hm = fetchTarball
-    "https://github.com/nix-community/home-manager/archive/release-23.05.tar.gz";
-in {
+{
 
   nix.extraOptions = ''
     trusted-users = root hypeit
@@ -29,18 +26,17 @@ in {
     home.homeDirectory = "/home/hypeit";
 
     home.file.".p10k.zsh" = {
-      source = ./p10k/.p10k.zsh;
+      source = .apps/p10k/.p10k.zsh;
       executable = true;
     };
     home.file.".local/share/applications/steam.desktop" = {
-      source = ./steam.desktop;
+      source = ./apps/steam.desktop;
     };
     home.file.".emacs.d" = {
-      source = ./emacs/.emacs.d;
+      source = ./apps/emacs/.emacs.d;
       recursive = true;
     };
     imports = [
-      (import "${hm}/nixos")
       ./apps
     ];
   };
