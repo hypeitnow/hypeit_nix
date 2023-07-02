@@ -26,19 +26,19 @@
   nixpkgs.config.allowUnfree = true;
 
   # Use GRUB, assume UEFI
-  boot.loader.grub.enable = true;
-  boot.loader.grub.devices = [ "nodev" ];
-  boot.loader.grub.efiInstallAsRemovable = true;
-  boot.loader.grub.efiSupport = true;
-  boot.loader.grub.splashImage = ./grub/alwaysnix.png;
-  boot.loader.grub.splashMode = "stretch"; # "normal"
-  boot.loader.grub.useOSProber = true;
-  boot.loader.timeout = 60;
-  boot.kernelModules = [ "snd-seq" "snd-rawmidi" ];
-  # copyKernels: "Using NixOS on a ZFS root file system might result in the boot error
-  # external pointer tables not supported when the number of hardlinks in the nix
-  # store gets very high.
-  boot.loader.grub.copyKernels = true;
+  # boot.loader.grub.enable = true;
+  # boot.loader.grub.devices = [ "nodev" ];
+  # boot.loader.grub.efiInstallAsRemovable = true;
+  # boot.loader.grub.efiSupport = true;
+  # boot.loader.grub.splashImage = ./grub/alwaysnix.png;
+  # boot.loader.grub.splashMode = "stretch"; # "normal"
+  # boot.loader.grub.useOSProber = true;
+  # boot.loader.timeout = 60;
+  # boot.kernelModules = [ "snd-seq" "snd-rawmidi" ];
+  # # copyKernels: "Using NixOS on a ZFS root file system might result in the boot error
+  # # external pointer tables not supported when the number of hardlinks in the nix
+  # # store gets very high.
+  # boot.loader.grub.copyKernels = true;
 
   networking.firewall.enable = false;
 
@@ -48,8 +48,8 @@
 
   # desktop stuff
   services.xserver.enable = true;
-  services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.desktopManager.cinnamon.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.desktopManager.plasma5.enable = true;
   services.xserver.displayManager.defaultSession = "plasmawayland";
   services.xserver.layout = "us";
   services.xserver.xkbOptions = "ctrl:nocaps,terminate:ctrl_alt_bksp";
@@ -60,7 +60,7 @@
 
   # sound
   sound.enable = true;
-  #hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.enable = false;
   services.pipewire = {
     enable = true;
     alsa = {
