@@ -25,6 +25,10 @@
   # NVIDIA requires nonfree
   nixpkgs.config.allowUnfree = true;
 
+
+  # Use standard Bootloader.
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
   # Use GRUB, assume UEFI
   # boot.loader.grub.enable = true;
   # boot.loader.grub.devices = [ "nodev" ];
