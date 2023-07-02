@@ -208,4 +208,7 @@
     sqlite
     nerdfonts
   ];
+  fonts.fonts = with pkgs; [
+    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "Hack" ]; })
+  ];
 }
