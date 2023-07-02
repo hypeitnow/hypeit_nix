@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  # imports = [ ./cachix.nix ];
+  imports = [ ./cachix.nix ];
 
   # nix stuff
   system.stateVersion = "23.05";
