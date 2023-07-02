@@ -206,5 +206,6 @@
     vscode
     gnome.cheese
     sqlite
+    hack-fonts
   ];
 }
