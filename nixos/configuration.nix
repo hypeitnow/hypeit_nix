@@ -27,7 +27,7 @@ in {
         prefixLength = 24;
       } ];
     };
-    defaultGateway = "192.168.1.1";
+    #defaultGateway = "192.168.1.1";
   };
   # silence ACPI "errors" at boot shown before NixOS stage 1 output (default is 4)
   boot.consoleLogLevel = 3;
