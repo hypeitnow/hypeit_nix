@@ -60,7 +60,6 @@
   services.xserver.enableCtrlAltBackspace = true;
   services.xserver.dpi = 96;
   services.xserver.libinput.enable = true; # touchpad
-  fonts.fonts = with pkgs; [ ubuntu_font_family ];
 
   # sound
   sound.enable = true;
@@ -209,6 +208,7 @@
     nerdfonts
   ];
   fonts.fonts = with pkgs; [
+    ubuntu_font_family 
     (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "Hack" ]; })
   ];
 }
