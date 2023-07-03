@@ -127,17 +127,17 @@ scrolling:
 font:
   # Normal (roman) font face
   bold:
-    family: Hack NF
+    family: Hack Nerd Font
   italic:
-    family: Hack NF
+    family: Hack Nerd Font
   normal:
-    family: Hack NF
+    family: Hack Nerd Font
   bold_italic:
     # Font family
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Hack NF
+    family: Hack Nerd Font
   # Point size
   size: 14
 
