@@ -1,6 +1,6 @@
 
-sudo dosfslabel /dev/vda1 "BOOT"
-sudo e2label /dev/vda2 "ROOT"
+sudo dosfslabel /dev/sda1 "BOOT"
+sudo e2label /dev/sda2 "ROOT"
 
 echo -e "Checking labels..."
 sudo blkid 
