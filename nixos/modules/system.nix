@@ -205,7 +205,7 @@
     vscode
     gnome.cheese
     sqlite
-    nerdfonts
+    # nerdfonts
   ];
   fonts.fonts = with pkgs; [
     ubuntu_font_family 
