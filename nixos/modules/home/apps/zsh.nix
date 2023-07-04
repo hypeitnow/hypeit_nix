@@ -1,5 +1,6 @@
 {
     programs.zsh = {
+      enable = true;
       enableAutosuggestions = true;
       enableCompletion = true;
       dotDir = ".config/zsh";
@@ -29,7 +30,7 @@
 
       initExtra = ''
         # be more bashy
-        setopt interactive_comments bashautolist nobeep nomenucomplete noautolist
+        setopt interactive_comments nobeep
 
         ## include config generated via "p10k configure" manually;
         ## zplug cannot edit home manager's zshrc file.
