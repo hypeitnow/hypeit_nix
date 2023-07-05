@@ -3,6 +3,8 @@
       enable = true;
       enableAutosuggestions = true;
       enableCompletion = true;
+      syntaxHighlighting.enable = true;
+      historySubstringSearch.enable = true;
       dotDir = ".config/zsh";
 
       sessionVariables = {
@@ -71,6 +73,10 @@
         plugins = [{
           name = "romkatv/powerlevel10k";
           tags = [ "as:theme" "depth:1" ];
+        } 
+        {
+          name = "plugins/git";
+          tags = [ "from:oh-my-zsh" ];
         }];
       };
     };
