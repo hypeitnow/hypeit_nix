@@ -38,6 +38,7 @@
         ## zplug cannot edit home manager's zshrc file.
 
         [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+        zstyle ':completion:*:descriptions' format '%U%K{yellow} %F{green}-- %F{red} %BNICE!1! %b%f %d --%f%k%u'
 
         ## Keybindings section
         bindkey -e
