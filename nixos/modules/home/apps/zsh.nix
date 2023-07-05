@@ -4,7 +4,7 @@
       enableAutosuggestions = true;
       enableCompletion = true;
       historySubstringSearch.enable = true;
-      syntaxHighlighting.highlighters = [ "main" "brackets" "pattern" "cursor" "regexp" "root" "line"];
+      syntaxHighlighting.styles = [ "main" "brackets" "pattern" "cursor" "regexp" "root" "line"];
       dotDir = ".config/zsh";
 
       sessionVariables = {
