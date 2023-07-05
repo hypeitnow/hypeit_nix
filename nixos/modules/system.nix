@@ -142,7 +142,6 @@
     handbrake
     mpv
     vlc
-    google-chrome
     firefox
     audacity
     gimp
