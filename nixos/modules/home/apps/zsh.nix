@@ -4,7 +4,9 @@
       enableAutosuggestions = true;
       enableCompletion = true;
       historySubstringSearch.enable = true;
-      syntaxHighlighting.styles = [ "main" "brackets" "pattern" "cursor" "regexp" "root" "line"];
+      enableSyntaxHighlighting = true;
+      #staff from unstable, yet to come 
+      #syntaxHighlighting.highlighters = [ "main" "brackets" "pattern" "cursor" "regexp" "root" "line"];
       dotDir = ".config/zsh";
 
       sessionVariables = {
@@ -78,10 +80,6 @@
         {
           name = "plugins/git";
           tags = [ "from:oh-my-zsh" ];
-        }
-        {
-          name = "zsh-users/zsh-syntax-highlighting";
-          tags = [ "defer:2" ];
         }];
       };
     };

@@ -1,1 +1,3 @@
-nixos/hardware-configuration.nix
+nixos/*.nix
+nixos/cachix/*.nix
+.gitignore
