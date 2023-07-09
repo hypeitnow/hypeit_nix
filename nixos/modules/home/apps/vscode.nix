@@ -119,6 +119,6 @@
           };
         };
       in
-        pkgs.vscode;
+        pkgs.vscode.fhs;
   };
 }

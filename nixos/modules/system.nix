@@ -105,6 +105,8 @@
 
   programs.steam.enable = true;
 
+  services.gnome.gnome-keyring.enable = true;
+
   # enable docker
   virtualisation.docker.enable = true;
 
@@ -201,8 +203,9 @@
     cutecom
     rshell
     mplayer
-    vscode
+    vscode.fhs
     gnome.cheese
+    gnome.seahorse
     sqlite
     # nerdfonts
   ];
