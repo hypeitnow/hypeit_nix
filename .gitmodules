@@ -1,6 +1,3 @@
-[submodule "examples/test-config"]
-	path = examples/test-config
-	url = https://github.com/ryan4yin/nix-config.git
 [submodule "examples/ricarch-config"]
 	path = examples/ricarch-config
 	url = https://github.com/RicArch97/nixos-config.git
