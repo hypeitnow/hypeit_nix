@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ./cachix.nix ];
+#  imports = [ ./cachix.nix ];
 
   # nix stuff
   system.stateVersion = "23.05";
@@ -170,7 +170,6 @@
     stress-ng
     usbutils
     nmap
-    zoom-us
     konversation
     nixfmt
     wakeonlan
@@ -189,12 +188,10 @@
     tap-plugins
     zam-plugins
     sanoid
-    hplip
     geteltorito
     argyllcms
     xcalib
     virt-manager
-    rpi-imager
     dig
     s3cmd
     kaffeine

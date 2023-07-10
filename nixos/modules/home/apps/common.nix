@@ -30,7 +30,7 @@
     # productivity
     obsidian
     wireshark
-    alacritty
+    kitty
 
     # IDE
     insomnia
